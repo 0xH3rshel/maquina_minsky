@@ -1,0 +1,26 @@
+#  Copie el dato contenido en el registro reg fuente en el reg destino sin perder el primero.
+
+:start
+# Inicio el registro 5 con valor 6
+inc 5, n
+inc 5, n
+inc 5, n
+inc 5, n
+inc 5, n
+inc 5, n
+
+# Objetivo copiar el valor 5 al registro 9
+# Utilizo un registro temporal 2 para llevar la cuenta
+dec 2, n, zero_reg2 
+dec 5, n, n
+:bucle
+inc 9, n
+inc 2, n
+dec 5, start, bucle
+
+# Podemos ajustarlo a 0 despues si queremos
+:zero_reg2
+dec 2, n, zero_reg2
+
+:fin
+inc 1, n

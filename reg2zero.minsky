@@ -1,0 +1,17 @@
+# Ponga a cero el registro reg.
+
+:start
+# Iniciamos el valor del registro 5 a 6
+inc 5, n
+inc 5, n
+inc 5, n
+inc 5, n
+inc 5, n
+inc 5, n
+
+:to0
+dec 5, fin, to0
+
+:fin
+# Indica que todo ha ido bien
+inc 1,n

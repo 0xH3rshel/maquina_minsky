@@ -1,0 +1,15 @@
+:start
+inc 2, n
+inc 2, n
+inc 2, n
+inc 2, n
+inc 2, n
+inc 2, n
+:mul
+inc 4, n
+inc 4, n
+inc 4, n
+dec 2, n, mul
+inc 1, n
+:fin
+inc 6, n
